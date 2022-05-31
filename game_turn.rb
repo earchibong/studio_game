@@ -7,7 +7,7 @@ module GameTurn
     number_rolled = die.roll
     case number_rolled
     when 1..2 then player.blam
-    when 3..4 then puts "#{player} was skipped"
+    when 3..4 then puts "#{player.name} was skipped"
     else 
         player.w00t
     end

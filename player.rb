@@ -12,7 +12,7 @@ class Player
     end
     
     def to_s
-        "I'm #{@name} with a health of #{@health} and score of #{score}"
+        "I'm #{@name} with: \n\ta health of #{@health} and score of #{score}"
     end
     
     def name=(new_name)
@@ -31,6 +31,10 @@ class Player
     
     def strong?
         @health > 100
+    end
+    
+    def <=>(other)
+        other.score <=> score
     end
 end
 
