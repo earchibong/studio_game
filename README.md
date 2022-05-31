@@ -1,4 +1,4 @@
-Exercises from <a href="[url](https://pragmaticstudio.com/courses/ruby)">Pragmatic Studio's</a> Ruby Programming course
+Exercises from <a href="[url](https://pragmaticstudio.com)">Pragmatic Studio's</a> Ruby Programming course
 
 Themes of the course include:
 <ul>
