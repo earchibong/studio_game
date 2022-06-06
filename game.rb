@@ -41,6 +41,10 @@ class Game
         #puts "\n"
     end
   end
+  
+  def total_points
+    @players.reduce(0) { |sum, player| sum + player.points }
+  end
 
   def print_stats
     strong_players = @players.select { |player| player.strong? }
@@ -60,5 +64,13 @@ class Game
         puts "#{formatted_name}: #{player.score}"
     end
     puts " "
+    
+    @players.each do |player|
+      puts "\n#{player.name}'s point totals:"
+      puts "#{player.points} grand total points"
+    end
+    
+    puts "#{total_points} total points from treasures found"
+
   end
 end
