@@ -32,13 +32,16 @@ class Game
     puts "\n"
 
     1.upto(rounds) do |round|
-        puts "\nRound #{round}:"
-        @players.each do |player|
-            GameTurn.take_turn(player)
-            puts player
-            puts "\n"
-        end
-        #puts "\n"
+      if block_given?
+        break if yield
+      end
+
+      puts "\nRound #{round}:"
+      @players.each do |player|
+        GameTurn.take_turn(player)
+        puts player
+        puts "\n"
+      end
     end
   end
   
@@ -70,7 +73,15 @@ class Game
       puts "#{player.points} grand total points"
     end
     
-    puts "#{total_points} total points from treasures found"
+    puts "\n#{total_points} total points from treasures found"
+    
+    @players.each do |player|
+      puts "\n#{player.name}'s point totals:"
+      player.each_found_treasure do |treasure|
+        puts "#{treasure.points} total #{treasure.name} points"
+      end
+      puts "#{player.points} grand total points"
+    end
 
   end
 end

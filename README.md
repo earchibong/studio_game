@@ -10,4 +10,5 @@ Themes of the course include:
     <li>Test Driven Design: TDD</li>
     <li>Blocks & Custom Iterators</li>
     <li>Symbols & Structs</li>
+    <li>Arrays & Hashes</li>
 </ul>
