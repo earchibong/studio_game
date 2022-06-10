@@ -55,6 +55,11 @@ class Player
       yield Treasure.new(name, point)
     end
   end
+  
+  def self.from_csv(string)
+    name, health = string.split(',')
+    Player.new(name, Integer(health))
+  end
 end
 
 player1 = Player.new('moe')

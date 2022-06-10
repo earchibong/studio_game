@@ -11,4 +11,6 @@ Themes of the course include:
     <li>Blocks & Custom Iterators</li>
     <li>Symbols & Structs</li>
     <li>Arrays & Hashes</li>
+    <li>Keyboard input and output</li>
+    <li>Read and write from files</li>
 </ul>
