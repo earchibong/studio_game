@@ -13,4 +13,5 @@ Themes of the course include:
     <li>Arrays & Hashes</li>
     <li>Keyboard input and output</li>
     <li>Read and write from files</li>
+    <li>Inheritance</li>
 </ul>
