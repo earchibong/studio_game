@@ -14,4 +14,5 @@ Themes of the course include:
     <li>Keyboard input and output</li>
     <li>Read and write from files</li>
     <li>Inheritance</li>
+    <li>Mixins</li>
 </ul>
